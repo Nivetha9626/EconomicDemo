@@ -8,7 +8,7 @@ using System.Threading.Tasks;
  
 namespace EC.Infrastructure
 {
-    internal class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions options) : base(options)
         {

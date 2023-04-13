@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace EC.Infrastructure
 {
-    internal class IApplicationDbContextFactory
+    public interface IApplicationDbContextFactory:IDisposable
     {
+        ApplicationDbContext Get();
     }
 }
